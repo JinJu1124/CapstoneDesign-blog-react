@@ -12,10 +12,10 @@ const Register = (props) => {
     const {email, password, username,location} = values;
     await Axios.post('/api/auth/signup', {email, password, username,location})
     .then(response =>{
-      console.log(response.response.status);
+      alert("회원가입되었습니다 !");
     })
     .catch(response => {
-      console.log(response.response.status);
+      alert("회원가입 안됐지롱");
     });
     // try {
     //   await axios.post('/api/auth/signup', {email, password, username,location});

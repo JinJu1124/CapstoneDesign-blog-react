@@ -23,6 +23,7 @@ const Mypage = () => {
           <Form.Control
             aria-label="Default"
             aria-describedby="inputGroup-sizing-small"
+            disabled
 
             value = {"찬희"}
           />
@@ -35,11 +36,9 @@ const Mypage = () => {
             aria-label="Default"
             aria-describedby="inputGroup-sizing-default"
             value={"chanhee1158@gmail.com"}
-            readOnly
+            disabled
           />
         </InputGroup>
-        <Button type='submit'>Change Name</Button>
-        &nbsp;
         <Button variant="danger" onClick={handleShow}>
           Delete Account
         </Button>
